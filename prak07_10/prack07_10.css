@@ -1,0 +1,64 @@
+
+.container {
+    width: 900px;
+    height: 1000px; /* Збільшимо висоту для можливості прокрутки */
+    border: 2px solid #333;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    position: relative;
+    margin: 50px auto;
+    overflow: auto; /* Додаємо прокрутку */
+}
+
+.box {
+    width: 100px;
+    height:100px;
+    border: 2px solid #333;
+    text-align: center;
+    line-height: 80px;
+    font-size: 16px;
+    margin: 5px;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Стилі для блоків зі статичним позиціонуванням*/
+.box.static {
+    background-color: #ff0000;
+    z-index: 1;
+}
+
+/* Стилі для блоків з відносним позиціонуванням */
+.box.relative {
+    background-color: #00ff00;
+    position: relative;
+    top: 50px;
+    left: -40px;
+    z-index: 2;
+}
+
+/* Стилі для блоків з абсолютним позиціонуванням */
+.box.absolute {
+    background-color: #0000ff;
+    position: absolute;
+    top: 170px;
+    left: 420px;
+    z-index: 3;
+}
+
+/* Стилі для блоків з фіксованим позиціонуванням */
+.box.fixed {
+    background-color: #ffff00;
+    position: fixed;
+    top: 0px;
+    right: 880px;
+    z-index: 4;
+}
+
+/* При наведенні миші збільшуємо блоки */
+.box:hover {
+    transform: scale(1.1);
+}
