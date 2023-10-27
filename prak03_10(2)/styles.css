@@ -1,0 +1,128 @@
+/* Загальні стилі для сторінки */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.someclass {
+    width: 50px;
+}
+
+/* Стилі для контейнера */
+.container {
+    display: flex;
+}
+
+/* Стилі для секції "News" */
+.content {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ddd;
+    flex: 1; /* Розтягуємо секцію "News" на всю доступну ширину */
+    box-sizing: border-box; /* Враховуємо padding та border в ширині */
+}
+
+.content h2 {
+    color: #333;
+}
+
+
+.content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.content ul li {
+    margin-bottom: 10px;
+}
+
+.content ul li a {
+    text-decoration: none;
+    color: #4f79a3;
+}
+
+/* Стилі для секції "Contact us" */
+.form {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ddd;
+    flex: 1; /* Розтягуємо секцію "Contact us" на всю доступну ширину */
+    box-sizing: border-box; /* Враховуємо padding та border в ширині */
+}
+
+.form h2 {
+    color: #333;
+}
+
+.form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form input[type="text"],
+.form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+}
+
+.form button {
+    background-color: #2ac484;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.form button:hover {
+    background-color: #4b79a7;
+}
+
+/* Стилі для таблиці */
+.table {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.table h2 {
+    color: #333;
+}
+
+.table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.table th {
+    background-color: #a96fca;
+    color: white;
+}
+
+.header h1 {
+    text-align: center;
+}
+
+.header {
+    
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    padding-top: 0px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+}
+
