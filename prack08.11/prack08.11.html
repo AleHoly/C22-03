@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<title>Демо JavaScript та DOM</title>
+<style>
+  .highlight { background-color: yellow; }
+</style>
+</head>
+<body>
+
+<div id="uniqueElement">Це блок div з унікальним ID.</div>
+<p class="textElement">Це параграф з класом.</p>
+<ul>
+  <li>Перший пункт списку</li>
+  <li>Другий пункт списку</li>
+</ul>
+<a href="#" id="link">Це посилання</a>
+
+<script>
+// Вибір елементу за ID і зміна тексту
+document.getElementById('uniqueElement').textContent = 'Текст змінено!';
+
+// Вибір всіх елементів за класом і зміна їх стилів
+document.querySelectorAll('.textElement').forEach(function(element) {
+  element.style.color = 'blue';
+});
+
+// Навігація по DOM та зміна властивостей
+var list = document.querySelector('ul');
+list.children[0].style.fontWeight = 'bold';
+list.parentNode.style.border = '1px solid black';
+
+// Додавання обробника подій
+document.getElementById('link').addEventListener('click', function(event) {
+  event.preventDefault();
+  alert('Посилання було клікнуто!');
+});
+
+
+</script>
+
+</body>
+</html>
