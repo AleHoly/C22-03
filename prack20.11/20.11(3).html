@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus Event</title>
+</head>
+<body>
+    <style>
+        body {
+            background-image: url("sea-asia-waves-artwork-japanese-art-hd-wallpaper-preview.jpg");
+            background-size: cover; 
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-position: center center;
+            font-family: courier, sans-serif;
+            margin: 0; 
+        }
+        </style>
+<input type="text" id="myField" placeholder="Текстове поле">
+<button id="myButton">Кнопка</button>
+
+<script>
+    var myField = document.getElementById('myField');
+
+    myField.addEventListener('focus', function() {
+        console.log('Елемент отримав фокус!');
+    });
+
+    myField.addEventListener('blur', function() {
+        console.log('Елемент втратив фокус!');
+    });
+</script>
+
+</body>
+</html>
